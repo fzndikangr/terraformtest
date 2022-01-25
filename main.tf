@@ -59,12 +59,6 @@ resource "azurerm_storage_account" "sa" {
 
 }
 
-resource "azurerm_storage_container" "ct" {
-  name                 = "terraform-state"
-  storage_account_name = azurerm_storage_account.sa.name
-
-}
-
 ## GitHub secrets
 
 resource "github_actions_secret" "actions_secret" {
