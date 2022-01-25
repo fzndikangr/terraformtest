@@ -9,7 +9,7 @@ variable "location" {
 
 variable "naming_prefix" {
   type    = string
-  default = "w"
+  default = "wskttest"
 }
 
 variable "github_repository" {
